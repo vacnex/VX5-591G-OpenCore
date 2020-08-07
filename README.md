@@ -140,7 +140,10 @@ To dual boot mac and windows there are 2 ways:
   |Path|String| **Your EFI Device String**/\EFI\Microsoft\Boot\bootmgfw-orig.efi|
   
   As an example, this is my Path string:
+  
   >`PciRoot(0x0)/Pci(0x17,0x0)/Sata(0x0,0x0,0x0)/HD(1,GPT,000001B3-2A80-3AAD-A6DE-D50166030000,0x800,0x64000) /\EFI\Microsoft\Boot\bootmgfw-orig.efi`
+  
+  > Remember space before `/\EFI\`
   
   At `Misc -> Security -> BootProtect`, enter **None** to force OpenCore priority over Firmware.
 
