@@ -92,6 +92,7 @@ And at `Root > ACPI > Patch`:
 |Replace|Data|58513132|
 
 __Fix Dual Boot__
+
 I use macos and window 10 on the same ssd  
 
 ![partition](https://i.imgur.com/GZlZPH2l.png)
@@ -105,30 +106,35 @@ In my case, windows 10 was installed earlier so I **must** place mac partition i
 
 To dual boot mac and windows there are 2 ways:
 
-- Bless Override
-  First you should change `\EFI\Microsoft\Boot\bootmgfw.efi` to `\EFI\Microsoft\Boot\bootmgfw-orig.efi`
-  Then in your config.plist at `Misc/BlessOverridedd` add new child `\EFI\Microsoft\Boot\bootmgfw-orig.efi` 
-  Then reboot you shuold see your EFI partition appear, but you can not rename this entry.
+#### Bless Override
+
+- First you should change `\EFI\Microsoft\Boot\bootmgfw.efi` to `\EFI\Microsoft\Boot\bootmgfw-orig.efi`
+
+- Then in your config.plist at `Misc/BlessOverridedd` add new child `\EFI\Microsoft\Boot\bootmgfw-orig.efi`
+
+- Then reboot you should see your EFI partition appear, but you can not rename this entry.
   
-- Add custom Windows 10 entry
-  First you should add `OpenShell.efi` in your `OC\driver` and add it to `config.plist` to find Pciroot
-  Boot Into OpenCore and Select `OpenShell.efi`, you’ll be Greeted with Screen like this (image from another one).
+#### Add custom Windows 10 entry
+
+- First you should add `OpenShell.efi` in your `OC\driver` and add it to `config.plist` to find Pciroot
+
+- Boot Into OpenCore and Select `OpenShell.efi`, you’ll be Greeted with Screen like this (image from another one).
 
 ![openshell](https://preview.redd.it/am2ilw28p7251.png?width=946&format=png&auto=webp&s=123cdc6fc67da00a2818bac4c226196d0d4f2f39)
   
-  Select your EFI Partition (The first entry of your boot drive. In my case it FS0:, the first ssd entry)
+- Select your EFI Partition (The first entry of your boot drive. In my case it FS0:, the first ssd entry)
   
-  Enter `map > \map_table.txt` to save your drive map data. Remember which FS drive your EFI is!
+- Enter `map > \map_table.txt` to save your drive map data. Remember which FS drive your EFI is!
   
-  Now exit from OpenShell and boot Mac OS.
+- Now exit from OpenShell and boot Mac OS.
   
-  Get into your EFI drive (I'm assuming you're old hat at this by now) and open map_table.txt Note the device string that identifies your EFI drive.
+- Get into your EFI drive (I'm assuming you're old hat at this by now) and open map_table.txt Note the device string that identifies your EFI drive.
 
 ![map_table](https://i.imgur.com/uQb3YTx.png)
   
-  Edit your `config.plist` file with the following changes:
+- Edit your `config.plist` file with the following changes:
   
-  At `Misc -> Entries` create a new item with the following:
+- At `Misc -> Entries` create a new item with the following:
   
   |Key|Type|Value|
   |---|---|---|
@@ -145,11 +151,11 @@ To dual boot mac and windows there are 2 ways:
   
   > Remember space before `/\EFI\`
   
-  At `Misc -> Security -> BootProtect`, enter **None** to force OpenCore priority over Firmware.
+- At `Misc -> Security -> BootProtect`, enter **None** to force OpenCore priority over Firmware.
 
-  At `Misc -> Security -> ScanPolicy` set to **0**. This will stop the default Windows and EFI from appearing in your Picker Window.
-  
-- Fix timezone: https://www.tonymacx86.com/threads/fix-incorrect-time-in-windows-osx-dual-boot.133719/  
+- At `Misc -> Security -> ScanPolicy` set to **0**. This will stop the default Windows and EFI from appearing in your Picker Window.
+
+ Fix timezone: https://www.tonymacx86.com/threads/fix-incorrect-time-in-windows-osx-dual-boot.133719/  
 
 ## Credits
 
