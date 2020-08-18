@@ -428,9 +428,9 @@
 				<key>MinKernel</key>
 				<string></string>
 				<key>ExecutablePath</key>
-				<string>Contents/MacOS/BrcmFirmwareRepo</string>
+				<string>Contents/MacOS/BrcmFirmwareData</string>
 				<key>BundlePath</key>
-				<string>BrcmFirmwareRepo.kext</string>
+				<string>BrcmFirmwareData.kext</string>
 			</dict>
 			<dict>
 				<key>Comment</key>
