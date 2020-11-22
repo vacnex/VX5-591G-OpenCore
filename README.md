@@ -1,43 +1,40 @@
 # Acer Aspire VX15 (VX5-591G)
-
+![image](https://user-images.githubusercontent.com/37587399/99892836-de90e680-2cab-11eb-8479-cb48b877adda.png)
 | Specs | Details |
 |------------|-------------------------------|
-| OS | macOS Catalina 10.15.6 |
+| OS | macOS Big Sur 11.0.1 |
 | CPU | Intel(R) Core(TM) i5 7300HQ |
 | RAM | 16 GB DDR4 2400MHz |
 | iGPU | Intel HD Graphics 630 |
 | dGPU | NVIDIA GeForce GTX 1050M |
 | Touchpad | ELAN 0501 ( PS2-Basic and I2C-Advanced ) |
-| Wireless | Replace with BCM94352Z |
+| Wireless | Replace with BCM94360CS2 + Adapter |
 | Audio | ALC255 |
 
 
 __Tested and working__
 
 - [x] Intel HD Graphics 630
-- [x] USB 3.0, USB C (working with my device, but need to patch again)
+- [x] USB 3.0, USB C
 - [x] Webcam
 - [x] LAN
 - [x] Screen brightness (Keybroad funtion support)
 - [x] Battery status
 - [x] Sleep/Wake
 - [x] TouchPad with gestures
-- [x] WiFi + Bluetooth (you need to replace another wireless card)
+- [x] WiFi + Bluetooth (You need to replace another wireless card)
 - [x] HDMI + HDMI Audio
 - [x] Airdrop + Handoff
-- [x] Audio + Headphone + Internal Mic
+- [x] Audio + Headphone + Internal Mic (Should use Boom 3D to increase sound volume)
 - [x] Keyboard with backlight (Some function keys not work)
 - [x] iServices (Native when sign-in my icloud)
 
 __Not working__
 
-- [ ] NVIDIA GeForce GTX 1050M
+- [ ] NVIDIA GeForce GTX 1050
 - [ ] SD Card reader
 - [ ] and a few other minor bugs
 
-__To-do__
-
-- [ ] Patch USB-C
 
 
 
@@ -104,13 +101,14 @@ In my case, windows 10 was installed earlier so I **must** place mac partition i
 | ------------ | ------------ | ------------ |
 
 
-To dual boot mac and windows there are 2 ways:
+To dual boot mac and windows you should change `\EFI\Microsoft\Boot\bootmgfw.efi` to `\EFI\Microsoft\Boot\bootmgfw-orig.efi`
+Then OC should be detect your winows 10 efi in Boot menu
+
+**IF OC Bootloader NOT AUTO DETECT WINDOWS 10 EFI** follow below steps:
 
 #### Bless Override
 
-- First you should change `\EFI\Microsoft\Boot\bootmgfw.efi` to `\EFI\Microsoft\Boot\bootmgfw-orig.efi`
-
-- Then in your config.plist at `Misc/BlessOverridedd` add new child `\EFI\Microsoft\Boot\bootmgfw-orig.efi`
+- In your config.plist at `Misc/BlessOverridedd` add new child `\EFI\Microsoft\Boot\bootmgfw-orig.efi`
 
 - Then reboot you should see your EFI partition appear, but you can not rename this entry.
   
