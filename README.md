@@ -1,7 +1,9 @@
-# Acer Aspire VX15 (VX5-591G)
+# Acer Aspire VX15 Hackintosh
 ![image](https://user-images.githubusercontent.com/37587399/99892836-de90e680-2cab-11eb-8479-cb48b877adda.png)
 | Specs | Details |
 |------------|-------------------------------|
+| Model| Acer Aspire VX15 (VX5-591G) |
+| OpenCore | 0.6.3 |
 | OS | macOS Big Sur 11.0.1 |
 | CPU | Intel(R) Core(TM) i5 7300HQ |
 | RAM | 16 GB DDR4 2400MHz |
