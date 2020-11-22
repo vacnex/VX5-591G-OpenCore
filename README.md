@@ -47,20 +47,24 @@ __BIOS Settings (Version 1.08)__
 - Disable Secure Boot
 - Set touchpad: Advance
 
+
 __OpenCore config__
 
 - Follow these instructions to configure your OpenCore: https://dortania.github.io/OpenCore-Install-Guide/  
 - ACPI Hotpatch: https://github.com/daliansky/OC-little  
 - Audio layout ID 29 or 3 or 31 
 
+
 __USB Mapping__
 
 - USB Mapping: https://dortania.github.io/OpenCore-Post-Install/usb/intel-mapping/intel.html
+
 
 __Fix HDMI audio__
 
 - Patch framebuffer: https://github.com/acidanthera/WhateverGreen/blob/master/Manual/FAQ.IntelHD.en.md
 - Add kext: `FakePCIID.kext` (kext at this repo)  
+
 
 __Fix brightness key__
 
@@ -87,6 +91,7 @@ And at `Root > ACPI > Patch`:
 |Find|Data|5F513132|
 |Limit|Number|0|
 |Replace|Data|58513132|
+
 
 __Fix Dual Boot__
 
@@ -153,8 +158,17 @@ Then OC should be detect your winows 10 efi in Boot menu
 
 - At `Misc -> Security -> ScanPolicy` set to **0**. This will stop the default Windows and EFI from appearing in your Picker Window.
 
- Fix timezone: https://www.tonymacx86.com/threads/fix-incorrect-time-in-windows-osx-dual-boot.133719/  
+
+__Prevent OC inject Mac SMBios to Widnows 10:__
+
+- At `Kernel -> Quirks -> CustomSMBIOSGuid` change to **true**.
+
+- At `PlatformInfo -> UpdateSMBIOSMode` change to **Custom**.
+
+
+__Fix timezone:__ 
+https://www.tonymacx86.com/threads/fix-incorrect-time-in-windows-osx-dual-boot.133719/  
+
 
 ## Credits
-
 Thanks to Acidanthera, RehabMan, dortania, alexandred, daliansky, dongcodebmt
