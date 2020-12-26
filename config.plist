@@ -64,14 +64,6 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>SSDT-HRT.aml</string>
-				<key>Path</key>
-				<string>SSDT-HRT.aml</string>
-				<key>Enabled</key>
-				<true/>
-			</dict>
-			<dict>
-				<key>Comment</key>
 				<string>SSDT-IPIC.aml</string>
 				<key>Path</key>
 				<string>SSDT-IPIC.aml</string>
@@ -962,16 +954,20 @@
 			<dict>
 				<key>Comment</key>
 				<string>OpenShell.efi</string>
-				<key>Auxiliary</key>
-				<true/>
+				<key>RealPath</key>
+				<false/>
+				<key>Name</key>
+				<string>OpenShell.efi</string>
+				<key>TextMode</key>
+				<false/>
 				<key>Enabled</key>
 				<true/>
 				<key>Arguments</key>
 				<string></string>
 				<key>Path</key>
 				<string>OpenShell.efi</string>
-				<key>Name</key>
-				<string>OpenShell.efi</string>
+				<key>Auxiliary</key>
+				<true/>
 			</dict>
 		</array>
 	</dict>
