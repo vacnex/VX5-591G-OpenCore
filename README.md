@@ -3,8 +3,8 @@
 | Specs | Details |
 |------------|-------------------------------|
 | Model| Acer Aspire VX15 (VX5-591G) |
-| OpenCore | 0.6.3 |
-| OS | macOS Big Sur 11.0.1 |
+| OpenCore | 0.6.6 |
+| OS | macOS Big Sur 11.2 |
 | CPU | Intel(R) Core(TM) i5 7300HQ |
 | RAM | 16 GB DDR4 2400MHz |
 | iGPU | Intel HD Graphics 630 |
@@ -34,6 +34,7 @@ __Tested and working__
 __Not working__
 
 - [ ] NVIDIA GeForce GTX 1050
+- [ ] DRM
 - [ ] SD Card reader
 - [ ] and a few other minor bugs
 
