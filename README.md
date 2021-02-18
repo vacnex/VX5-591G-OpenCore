@@ -158,9 +158,9 @@ Then OC should be detect your winows 10 efi in Boot menu
   
   > Remember space before `/\EFI\`
   
-- At `Misc -> Security -> BootProtect`, enter **None** to force OpenCore priority over Firmware.
+- At `Misc -> Boot -> LauncherOption`, set to **Full**
 
-- At `Misc -> Security -> ScanPolicy` set to **0**. This will stop the default Windows and EFI from appearing in your Picker Window.
+- At `Misc -> Security -> ScanPolicy` set to **0**
 
 
 __Prevent OC inject Mac SMBios to Widnows 10:__
