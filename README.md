@@ -1,5 +1,6 @@
 # Acer Aspire VX15 Hackintosh
-![image](https://user-images.githubusercontent.com/37587399/99892836-de90e680-2cab-11eb-8479-cb48b877adda.png)
+
+![image](https://user-images.githubusercontent.com/37587399/108298022-cfe49d80-71ce-11eb-91a0-dbdd63a06604.png)
 | Specs | Details |
 |------------|-------------------------------|
 | Model| Acer Aspire VX15 (VX5-591G) |
