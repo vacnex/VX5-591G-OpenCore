@@ -4,7 +4,7 @@
 | Specs | Details |
 |------------|-------------------------------|
 | Model| Acer Aspire VX15 (VX5-591G) |
-| OpenCore | 0.6.6 |
+| OpenCore | 0.6.8 |
 | OS | macOS Big Sur 11.2 |
 | CPU | Intel(R) Core(TM) i5 7300HQ |
 | RAM | 16 GB DDR4 2400MHz |
