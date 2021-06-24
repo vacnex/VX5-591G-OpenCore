@@ -8,7 +8,7 @@
 		<array>
 			<dict>
 				<key>Comment</key>
-				<string>SSDT-ALS0.aml</string>
+				<string>Fake Brightness Sensor</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
@@ -16,7 +16,7 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>SSDT-BKEY.aml</string>
+				<string>Fix Brightness Key</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
@@ -24,7 +24,7 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>SSDT-DDGPU.aml</string>
+				<string>Disable DGPU</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
@@ -32,7 +32,7 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>SSDT-DMAC.aml</string>
+				<string>Add DMAC</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
@@ -40,7 +40,7 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>SSDT-EC.aml</string>
+				<string>Fake EC</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
@@ -48,7 +48,7 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>SSDT-GPRW.aml</string>
+				<string>Fix Sleep</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
@@ -56,7 +56,7 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>SSDT-HPET.aml</string>
+				<string>Fix HPET</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
@@ -64,7 +64,7 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>SSDT-IPIC.aml</string>
+				<string>Fix IPIC</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
@@ -72,7 +72,7 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>SSDT-MCHC.aml</string>
+				<string>Add MCHC</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
@@ -80,7 +80,7 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>SSDT-MEM2.aml</string>
+				<string>Add MEM2</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
@@ -88,7 +88,7 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>SSDT-PLUG.aml</string>
+				<string>Enable X86PlatformPlugin</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
@@ -96,7 +96,7 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>SSDT-PMCR.aml</string>
+				<string>Add PMCR</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
@@ -104,7 +104,7 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>SSDT-PNLF.aml</string>
+				<string>Brightness Adjustment</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
@@ -112,7 +112,7 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>SSDT-RTC0.aml</string>
+				<string>Fix RTC</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
@@ -120,7 +120,7 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>SSDT-SBUS.aml</string>
+				<string>Add SBUS</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
@@ -128,7 +128,7 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>SSDT-TIMR.aml</string>
+				<string>Fix TIMR</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
@@ -136,7 +136,7 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>SSDT-TPAD.aml</string>
+				<string>Fix Trackpad</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
@@ -144,7 +144,7 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>SSDT-USBX.aml</string>
+				<string>Fix USB Power</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
@@ -307,7 +307,7 @@
 			<key>EnableSafeModeSlide</key>
 			<true/>
 			<key>EnableWriteUnprotector</key>
-			<false/>
+			<true/>
 			<key>ForceBooterSignature</key>
 			<false/>
 			<key>ForceExitBootServices</key>
@@ -323,13 +323,13 @@
 			<key>ProvideMaxSlide</key>
 			<integer>0</integer>
 			<key>RebuildAppleMemoryMap</key>
-			<true/>
+			<false/>
 			<key>SetupVirtualMap</key>
 			<true/>
 			<key>SignalAppleOS</key>
 			<false/>
 			<key>SyncRuntimePermissions</key>
-			<true/>
+			<false/>
 		</dict>
 	</dict>
 	<key>DeviceProperties</key>
@@ -339,7 +339,7 @@
 			<key>PciRoot(0x0)/Pci(0x0,0x0)</key>
 			<dict>
 				<key>AAPL,slot-name</key>
-				<string>Internal</string>
+				<string>Internal@0,0,0</string>
 				<key>device_type</key>
 				<string>Host bridge</string>
 				<key>model</key>
@@ -348,7 +348,7 @@
 			<key>PciRoot(0x0)/Pci(0x1,0x0)</key>
 			<dict>
 				<key>AAPL,slot-name</key>
-				<string>Internal</string>
+				<string>Internal@0,1,0</string>
 				<key>device_type</key>
 				<string>PCI bridge</string>
 				<key>model</key>
@@ -357,7 +357,7 @@
 			<key>PciRoot(0x0)/Pci(0x14,0x0)</key>
 			<dict>
 				<key>AAPL,slot-name</key>
-				<string>Internal</string>
+				<string>Internal@0,20,0</string>
 				<key>device_type</key>
 				<string>USB controller</string>
 				<key>model</key>
@@ -366,7 +366,7 @@
 			<key>PciRoot(0x0)/Pci(0x14,0x2)</key>
 			<dict>
 				<key>AAPL,slot-name</key>
-				<string>Internal</string>
+				<string>Internal@0,20,2</string>
 				<key>device_type</key>
 				<string>Signal processing controller</string>
 				<key>model</key>
@@ -375,7 +375,7 @@
 			<key>PciRoot(0x0)/Pci(0x15,0x0)</key>
 			<dict>
 				<key>AAPL,slot-name</key>
-				<string>Internal</string>
+				<string>Internal@0,21,0</string>
 				<key>device_type</key>
 				<string>Signal processing controller</string>
 				<key>model</key>
@@ -384,7 +384,7 @@
 			<key>PciRoot(0x0)/Pci(0x15,0x1)</key>
 			<dict>
 				<key>AAPL,slot-name</key>
-				<string>Internal</string>
+				<string>Internal@0,21,1</string>
 				<key>device_type</key>
 				<string>Signal processing controller</string>
 				<key>model</key>
@@ -393,7 +393,7 @@
 			<key>PciRoot(0x0)/Pci(0x16,0x0)</key>
 			<dict>
 				<key>AAPL,slot-name</key>
-				<string>Internal</string>
+				<string>Internal@0,22,0</string>
 				<key>device_type</key>
 				<string>Communication controller</string>
 				<key>model</key>
@@ -402,7 +402,7 @@
 			<key>PciRoot(0x0)/Pci(0x17,0x0)</key>
 			<dict>
 				<key>AAPL,slot-name</key>
-				<string>Internal</string>
+				<string>Internal@0,23,0</string>
 				<key>device_type</key>
 				<string>SATA controller</string>
 				<key>model</key>
@@ -411,7 +411,7 @@
 			<key>PciRoot(0x0)/Pci(0x1C,0x0)</key>
 			<dict>
 				<key>AAPL,slot-name</key>
-				<string>Internal</string>
+				<string>Internal@0,28,0</string>
 				<key>device_type</key>
 				<string>PCI bridge</string>
 				<key>model</key>
@@ -420,7 +420,7 @@
 			<key>PciRoot(0x0)/Pci(0x1C,0x0)/Pci(0x0,0x0)</key>
 			<dict>
 				<key>AAPL,slot-name</key>
-				<string>Internal</string>
+				<string>Internal@0,28,0/0,0</string>
 				<key>device_type</key>
 				<string>Network controller</string>
 				<key>model</key>
@@ -429,7 +429,7 @@
 			<key>PciRoot(0x0)/Pci(0x1C,0x3)</key>
 			<dict>
 				<key>AAPL,slot-name</key>
-				<string>Internal</string>
+				<string>Internal@0,28,3</string>
 				<key>device_type</key>
 				<string>PCI bridge</string>
 				<key>model</key>
@@ -438,7 +438,7 @@
 			<key>PciRoot(0x0)/Pci(0x1C,0x3)/Pci(0x0,0x0)</key>
 			<dict>
 				<key>AAPL,slot-name</key>
-				<string>Internal</string>
+				<string>Internal@0,28,3/0,0</string>
 				<key>device_type</key>
 				<string>Ethernet controller</string>
 				<key>model</key>
@@ -447,7 +447,7 @@
 			<key>PciRoot(0x0)/Pci(0x1D,0x0)</key>
 			<dict>
 				<key>AAPL,slot-name</key>
-				<string>Internal</string>
+				<string>Internal@0,29,0</string>
 				<key>device_type</key>
 				<string>PCI bridge</string>
 				<key>model</key>
@@ -465,7 +465,7 @@
 			<key>PciRoot(0x0)/Pci(0x1F,0x0)</key>
 			<dict>
 				<key>AAPL,slot-name</key>
-				<string>Internal</string>
+				<string>Internal@0,31,0</string>
 				<key>device_type</key>
 				<string>ISA bridge</string>
 				<key>model</key>
@@ -492,13 +492,26 @@
 				</data>
 				<key>layout-id</key>
 				<data>
-				HQAAAA==
+				HwAAAA==
 				</data>
 				<key>model</key>
 				<string>CM238 HD Audio Controller</string>
 			</dict>
+			<key>PciRoot(0x0)/Pci(0x1F,0x4)</key>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>Internal@0,31,4</string>
+				<key>device_type</key>
+				<string>SMBus</string>
+				<key>model</key>
+				<string>100 Series/C230 Series Chipset Family SMBus</string>
+			</dict>
 			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
 			<dict>
+				<key>AAPL,ig-platform-id</key>
+				<data>
+				AAAbWQ==
+				</data>
 				<key>AAPL,slot-name</key>
 				<string>Internal</string>
 				<key>device_type</key>
@@ -929,7 +942,7 @@
 		<key>Quirks</key>
 		<dict>
 			<key>AppleCpuPmCfgLock</key>
-			<true/>
+			<false/>
 			<key>AppleXcpmCfgLock</key>
 			<true/>
 			<key>AppleXcpmExtraMsrs</key>
@@ -937,7 +950,7 @@
 			<key>AppleXcpmForceBoost</key>
 			<false/>
 			<key>CustomSMBIOSGuid</key>
-			<true/>
+			<false/>
 			<key>DisableIoMapper</key>
 			<true/>
 			<key>DisableLinkeditJettison</key>
@@ -960,6 +973,8 @@
 			<true/>
 			<key>PowerTimeoutKernelPanic</key>
 			<true/>
+			<key>ProvideCurrentCpuInfo</key>
+			<false/>
 			<key>SetApfsTrimTimeout</key>
 			<integer>-1</integer>
 			<key>ThirdPartyDrives</key>
@@ -988,7 +1003,7 @@
 			<key>HibernateMode</key>
 			<string>None</string>
 			<key>HideAuxiliary</key>
-			<false/>
+			<true/>
 			<key>LauncherOption</key>
 			<string>Full</string>
 			<key>LauncherPath</key>
@@ -1000,7 +1015,7 @@
 			<key>PickerMode</key>
 			<string>External</string>
 			<key>PickerVariant</key>
-			<string>Modern</string>
+			<string>Acidanthera\GoldenGate</string>
 			<key>PollAppleHotKeys</key>
 			<false/>
 			<key>ShowPicker</key>
@@ -1037,6 +1052,8 @@
 			<true/>
 			<key>AllowSetDefault</key>
 			<true/>
+			<key>AllowToggleSip</key>
+			<false/>
 			<key>ApECID</key>
 			<integer>0</integer>
 			<key>AuthRestart</key>
@@ -1075,8 +1092,10 @@
 				<string>OpenShell.efi</string>
 				<key>Enabled</key>
 				<true/>
+				<key>Flavour</key>
+				<string>OpenShell:UEFIShell:Shell</string>
 				<key>Name</key>
-				<string>OpenShell.efi</string>
+				<string>UEFI Shell</string>
 				<key>Path</key>
 				<string>OpenShell.efi</string>
 				<key>RealPath</key>
@@ -1109,6 +1128,8 @@
 			</dict>
 			<key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
 			<dict>
+				<key>ForceDisplayRotationInEFI</key>
+				<integer>0</integer>
 				<key>SystemAudioVolume</key>
 				<data>
 				Rg==
@@ -1120,9 +1141,7 @@
 				AAAAAA==
 				</data>
 				<key>prev-lang:kbd</key>
-				<data>
-				cnUtUlU6MjUy
-				</data>
+				<string>en-US:0</string>
 				<key>run-efi-updater</key>
 				<string>No</string>
 			</dict>
@@ -1141,6 +1160,7 @@
 			<key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
 			<array>
 				<string>boot-args</string>
+				<string>ForceDisplayRotationInEFI</string>
 			</array>
 		</dict>
 		<key>LegacyEnable</key>
@@ -1186,7 +1206,7 @@
 		<false/>
 		<key>Generic</key>
 		<dict>
-			<key>AdviseWindows</key>
+			<key>AdviseFeatures</key>
 			<false/>
 			<key>MLB</key>
 			<string>C02914802GUHWVPAD</string>
@@ -1216,7 +1236,7 @@
 		<key>UpdateSMBIOS</key>
 		<true/>
 		<key>UpdateSMBIOSMode</key>
-		<string>Custom</string>
+		<string>Create</string>
 		<key>UseRawUuidEncoding</key>
 		<false/>
 	</dict>
@@ -1242,9 +1262,9 @@
 			<key>AppleEvent</key>
 			<string>Builtin</string>
 			<key>CustomDelays</key>
-			<string>Auto</string>
+			<false/>
 			<key>KeyInitialDelay</key>
-			<integer>0</integer>
+			<integer>50</integer>
 			<key>KeySubsequentDelay</key>
 			<integer>5</integer>
 			<key>PointerSpeedDiv</key>
@@ -1261,7 +1281,7 @@
 			<key>AudioOut</key>
 			<integer>0</integer>
 			<key>AudioSupport</key>
-			<false/>
+			<true/>
 			<key>MinimumVolume</key>
 			<integer>20</integer>
 			<key>PlayChime</key>
@@ -1271,12 +1291,13 @@
 			<key>SetupDelay</key>
 			<integer>0</integer>
 			<key>VolumeAmplifier</key>
-			<integer>0</integer>
+			<integer>100</integer>
 		</dict>
 		<key>ConnectDrivers</key>
 		<true/>
 		<key>Drivers</key>
 		<array>
+			<string>AudioDxe.efi</string>
 			<string>HfsPlus.efi</string>
 			<string>OpenCanopy.efi</string>
 			<string>OpenRuntime.efi</string>
@@ -1311,7 +1332,7 @@
 			<key>ForceResolution</key>
 			<false/>
 			<key>GopPassThrough</key>
-			<false/>
+			<string>Disabled</string>
 			<key>IgnoreTextInGraphics</key>
 			<false/>
 			<key>ProvideConsoleGop</key>
@@ -1337,6 +1358,8 @@
 			<false/>
 			<key>AppleDebugLog</key>
 			<false/>
+			<key>AppleEg2Info</key>
+			<false/>
 			<key>AppleFramebufferInfo</key>
 			<false/>
 			<key>AppleImageConversion</key>
@@ -1358,7 +1381,7 @@
 			<key>DeviceProperties</key>
 			<false/>
 			<key>FirmwareVolume</key>
-			<false/>
+			<true/>
 			<key>HashServices</key>
 			<false/>
 			<key>OSInfo</key>
@@ -1372,12 +1395,18 @@
 			<false/>
 			<key>DisableSecurityPolicy</key>
 			<false/>
+			<key>EnableVectorAcceleration</key>
+			<true/>
 			<key>ExitBootServicesDelay</key>
 			<integer>0</integer>
+			<key>ForgeUefiSupport</key>
+			<false/>
 			<key>IgnoreInvalidFlexRatio</key>
 			<false/>
 			<key>ReleaseUsbOwnership</key>
 			<true/>
+			<key>ReloadOptionRoms</key>
+			<false/>
 			<key>RequestBootVarRouting</key>
 			<true/>
 			<key>TscSyncTimeout</key>
