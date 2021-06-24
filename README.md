@@ -4,7 +4,7 @@
 | Specs | Details |
 |------------|-------------------------------|
 | Model| Acer Aspire VX15 (VX5-591G) |
-| OpenCore | 0.6.8 |
+| OpenCore | 0.7.0 |
 | OS | macOS Big Sur 11.2 |
 | CPU | Intel(R) Core(TM) i5 7300HQ |
 | RAM | 16 GB DDR4 2400MHz |
@@ -34,7 +34,7 @@ __Tested and working__
 
 __Not working__
 
-- [ ] NVIDIA GeForce GTX 1050
+- [ ] NVIDIA GeForce GTX 1050M
 - [ ] DRM
 - [ ] SD Card reader
 - [ ] and a few other minor bugs
@@ -62,13 +62,17 @@ __OpenCore config__
 __USB Mapping__
 
 - USB Mapping: https://dortania.github.io/OpenCore-Post-Install/usb/intel-mapping/intel.html
-
+- USB Mapping: https://github.com/corpnewt/USBMap
+- Or using Hackintool
 
 __Fix HDMI audio__
 
 - Patch framebuffer: https://github.com/acidanthera/WhateverGreen/blob/master/Manual/FAQ.IntelHD.en.md
 - Add kext: `FakePCIID.kext` (kext at this repo)  
 
+__Fix iServices__
+
+- Fix iServices: https://dortania.github.io/OpenCore-Post-Install/universal/iservices.html
 
 __Fix brightness key__
 
@@ -162,12 +166,6 @@ Then OC should be detect your winows 10 efi in Boot menu
 
 - At `Misc -> Security -> ScanPolicy` set to **0**
 
-
-__Prevent OC inject Mac SMBios to Widnows 10:__
-
-- At `Kernel -> Quirks -> CustomSMBIOSGuid` change to **true**.
-
-- At `PlatformInfo -> UpdateSMBIOSMode` change to **Custom**.
 
 
 __Fix timezone:__ 
