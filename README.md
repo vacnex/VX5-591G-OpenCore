@@ -63,6 +63,7 @@ __USB Mapping__
 
 - USB Mapping: https://dortania.github.io/OpenCore-Post-Install/usb/intel-mapping/intel.html
 - USB Mapping: https://github.com/corpnewt/USBMap
+- USB Mapping: https://github.com/USBToolBox/tool
 - Or using Hackintool
 
 __Fix HDMI audio__
